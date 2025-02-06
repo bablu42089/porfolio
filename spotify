@@ -1,0 +1,286 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Spotify Clone
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-900 text-white">
+  <!-- Navbar -->
+  <nav class="bg-gray-800 p-4">
+   <div class="container mx-auto flex justify-between items-center">
+    <div class="flex items-center">
+     <img alt="Spotify logo placeholder" class="h-10 w-10" height="50" src="https://storage.googleapis.com/a1aa/image/OY8afT05rG3Jw9qTCYIPisGZx4ysMSrIjFOXNKKKVcU.jpg" width="50"/>
+     <span class="ml-3 text-xl font-bold">
+      Spotify
+     </span>
+    </div>
+    <ul class="flex space-x-4">
+     <li>
+      <a class="hover:text-green-500" href="#">
+       Home
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-green-500" href="#">
+       Search
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-green-500" href="#">
+       Your Library
+      </a>
+     </li>
+    </ul>
+    <div class="flex items-center space-x-4">
+     <a class="hover:text-green-500" href="#">
+      <i class="fas fa-user">
+      </i>
+     </a>
+     <a class="hover:text-green-500" href="#">
+      <i class="fas fa-cog">
+      </i>
+     </a>
+    </div>
+   </div>
+  </nav>
+  <!-- Main Content -->
+  <div class="container mx-auto mt-8">
+   <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <!-- Sidebar -->
+    <div class="hidden md:block bg-gray-800 p-4 rounded-lg">
+     <ul class="space-y-4">
+      <li>
+       <a class="flex items-center space-x-2 hover:text-green-500" href="#">
+        <i class="fas fa-home">
+        </i>
+        <span>
+         Home
+        </span>
+       </a>
+      </li>
+      <li>
+       <a class="flex items-center space-x-2 hover:text-green-500" href="#">
+        <i class="fas fa-search">
+        </i>
+        <span>
+         Search
+        </span>
+       </a>
+      </li>
+      <li>
+       <a class="flex items-center space-x-2 hover:text-green-500" href="#">
+        <i class="fas fa-book">
+        </i>
+        <span>
+         Your Library
+        </span>
+       </a>
+      </li>
+      <li>
+       <a class="flex items-center space-x-2 hover:text-green-500" href="#">
+        <i class="fas fa-plus-square">
+        </i>
+        <span>
+         Create Playlist
+        </span>
+       </a>
+      </li>
+      <li>
+       <a class="flex items-center space-x-2 hover:text-green-500" href="#">
+        <i class="fas fa-heart">
+        </i>
+        <span>
+         Liked Songs
+        </span>
+       </a>
+      </li>
+     </ul>
+    </div>
+    <!-- Main Section -->
+    <div class="col-span-2">
+     <h2 class="text-2xl font-bold mb-4">
+      Good Evening
+     </h2>
+     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <!-- Playlist Card -->
+      <div class="bg-gray-800 p-4 rounded-lg flex items-center space-x-4">
+       <img alt="Playlist cover image placeholder" class="h-20 w-20 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/jH9gI-ylsx8FYif6WtGhsGYwEgqVQVcZ7cgsvGE-edk.jpg" width="80"/>
+       <div>
+        <h3 class="text-lg font-semibold">
+         Daily Mix 1
+        </h3>
+        <p class="text-gray-400">
+         Artist 1, Artist 2, Artist 3
+        </p>
+       </div>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg flex items-center space-x-4">
+       <img alt="Playlist cover image placeholder" class="h-20 w-20 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/jH9gI-ylsx8FYif6WtGhsGYwEgqVQVcZ7cgsvGE-edk.jpg" width="80"/>
+       <div>
+        <h3 class="text-lg font-semibold">
+         Daily Mix 2
+        </h3>
+        <p class="text-gray-400">
+         Artist 4, Artist 5, Artist 6
+        </p>
+       </div>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg flex items-center space-x-4">
+       <img alt="Playlist cover image placeholder" class="h-20 w-20 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/jH9gI-ylsx8FYif6WtGhsGYwEgqVQVcZ7cgsvGE-edk.jpg" width="80"/>
+       <div>
+        <h3 class="text-lg font-semibold">
+         Daily Mix 3
+        </h3>
+        <p class="text-gray-400">
+         Artist 7, Artist 8, Artist 9
+        </p>
+       </div>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg flex items-center space-x-4">
+       <img alt="Playlist cover image placeholder" class="h-20 w-20 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/jH9gI-ylsx8FYif6WtGhsGYwEgqVQVcZ7cgsvGE-edk.jpg" width="80"/>
+       <div>
+        <h3 class="text-lg font-semibold">
+         Daily Mix 4
+        </h3>
+        <p class="text-gray-400">
+         Artist 10, Artist 11, Artist 12
+        </p>
+       </div>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg flex items-center space-x-4">
+       <img alt="Playlist cover image placeholder" class="h-20 w-20 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/jH9gI-ylsx8FYif6WtGhsGYwEgqVQVcZ7cgsvGE-edk.jpg" width="80"/>
+       <div>
+        <h3 class="text-lg font-semibold">
+         Daily Mix 5
+        </h3>
+        <p class="text-gray-400">
+         Artist 13, Artist 14, Artist 15
+        </p>
+       </div>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg flex items-center space-x-4">
+       <img alt="Playlist cover image placeholder" class="h-20 w-20 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/jH9gI-ylsx8FYif6WtGhsGYwEgqVQVcZ7cgsvGE-edk.jpg" width="80"/>
+       <div>
+        <h3 class="text-lg font-semibold">
+         Daily Mix 6
+        </h3>
+        <p class="text-gray-400">
+         Artist 16, Artist 17, Artist 18
+        </p>
+       </div>
+      </div>
+     </div>
+     <h2 class="text-2xl font-bold mt-8 mb-4">
+      Recently Played
+     </h2>
+     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <!-- Recently Played Card -->
+      <div class="bg-gray-800 p-4 rounded-lg">
+       <img alt="Recently played album cover image placeholder" class="h-40 w-full rounded mb-4" height="300" src="https://storage.googleapis.com/a1aa/image/POOtUCM7BsnoI84sKdD-2DR0vIJky1BI-CqOqafv9nE.jpg" width="300"/>
+       <h3 class="text-lg font-semibold">
+        Album 1
+       </h3>
+       <p class="text-gray-400">
+        Artist 1
+       </p>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg">
+       <img alt="Recently played album cover image placeholder" class="h-40 w-full rounded mb-4" height="300" src="https://storage.googleapis.com/a1aa/image/POOtUCM7BsnoI84sKdD-2DR0vIJky1BI-CqOqafv9nE.jpg" width="300"/>
+       <h3 class="text-lg font-semibold">
+        Album 2
+       </h3>
+       <p class="text-gray-400">
+        Artist 2
+       </p>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg">
+       <img alt="Recently played album cover image placeholder" class="h-40 w-full rounded mb-4" height="300" src="https://storage.googleapis.com/a1aa/image/POOtUCM7BsnoI84sKdD-2DR0vIJky1BI-CqOqafv9nE.jpg" width="300"/>
+       <h3 class="text-lg font-semibold">
+        Album 3
+       </h3>
+       <p class="text-gray-400">
+        Artist 3
+       </p>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg">
+       <img alt="Recently played album cover image placeholder" class="h-40 w-full rounded mb-4" height="300" src="https://storage.googleapis.com/a1aa/image/POOtUCM7BsnoI84sKdD-2DR0vIJky1BI-CqOqafv9nE.jpg" width="300"/>
+       <h3 class="text-lg font-semibold">
+        Album 4
+       </h3>
+       <p class="text-gray-400">
+        Artist 4
+       </p>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg">
+       <img alt="Recently played album cover image placeholder" class="h-40 w-full rounded mb-4" height="300" src="https://storage.googleapis.com/a1aa/image/POOtUCM7BsnoI84sKdD-2DR0vIJky1BI-CqOqafv9nE.jpg" width="300"/>
+       <h3 class="text-lg font-semibold">
+        Album 5
+       </h3>
+       <p class="text-gray-400">
+        Artist 5
+       </p>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg">
+       <img alt="Recently played album cover image placeholder" class="h-40 w-full rounded mb-4" height="300" src="https://storage.googleapis.com/a1aa/image/POOtUCM7BsnoI84sKdD-2DR0vIJky1BI-CqOqafv9nE.jpg" width="300"/>
+       <h3 class="text-lg font-semibold">
+        Album 6
+       </h3>
+       <p class="text-gray-400">
+        Artist 6
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- Footer -->
+  <footer class="bg-gray-800 p-4 mt-8">
+   <div class="container mx-auto flex justify-between items-center">
+    <div class="flex items-center space-x-4">
+     <img alt="Spotify logo placeholder" class="h-10 w-10" height="50" src="https://storage.googleapis.com/a1aa/image/OY8afT05rG3Jw9qTCYIPisGZx4ysMSrIjFOXNKKKVcU.jpg" width="50"/>
+     <span class="text-xl font-bold">
+      Spotify
+     </span>
+    </div>
+    <ul class="flex space-x-4">
+     <li>
+      <a class="hover:text-green-500" href="#">
+       Legal
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-green-500" href="#">
+       Privacy Center
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-green-500" href="#">
+       Privacy Policy
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-green-500" href="#">
+       Cookies
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-green-500" href="#">
+       About Ads
+      </a>
+     </li>
+    </ul>
+   </div>
+  </footer>
+ </body>
+</html>
